@@ -27,13 +27,93 @@ a {
  /* HEADER */
 
 .main-header {  
-  display: flex;
+ /*  display: flex;
+  align-items: center;
+  background-color:#ced4da;
+  height: 15vh;
+  padding: 15px 0 10px; */
+}
+
+.container-desktop{
+  display: none;
   align-items: center;
   background-color:#ced4da;
   height: 15vh;
   padding: 15px 0 10px;
 }
 
+/* Header Mobile */
+
+.container-menu {
+  display: flex;
+  min-height: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#ced4da;
+  height: 12vh;
+  padding: 10px 2rem;
+  width: 100% !important;
+}
+
+.container-menu .btn-menu {
+  width: 10%;
+}
+
+.container-menu i {
+  color:black;
+  font-size: 5.5rem;
+}
+
+
+
+
+.container-menu .logo {
+  width: 90%;
+  text-align: left;  
+  
+}
+
+.container-menu .logo img{ 
+  height: 10vh;
+  margin: 0 auto;
+ }
+
+
+
+
+/* .container-menu{
+
+  background-color:#ced4da;
+  height: 10vh;
+  padding: 10px 2rem;
+
+  display: flex;
+  min-height: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu{
+  justify-self: flex-start;
+}
+
+.btn-menu i{
+  font-size: 5rem;
+}
+
+
+.logo {
+  text-align: center;
+    width: 70%;
+}
+
+.logo img{
+  
+  width: 100px;
+  height: 100px;
+}  */
 
 .main-logo{
     justify-self: flex-start;
@@ -116,16 +196,55 @@ a {
 
 /* FOOTER */
 
-.footer {
+.main-footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(14, 49, 49);
+  /* background-color:  rgba(34, 31, 31, 0.972); */
 }
 
 .footer-container{
-  width: 100%;
-  height: 15vh;
-  background-color: #5d2035;
+  
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  height: 20vh;
+  background-color: rgb(14, 49, 49);
+  /* background-color: rgba(34, 31, 31, 0.972); */
 }
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin-top: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+
+}
+
+.footer-content span{
+  
+  color: whitesmoke;  
+
+}
+
+.footer-content span:nth-child(1){
+  
+  color: tomato;  
+
+}
+
+.footer-content span:nth-child(2){
+  
+  color: greenyellow;
+  padding-top: 1rem;  
+
+}
+
+
+
 
 
 
@@ -145,5 +264,12 @@ a {
 @media only screen and ( min-width: 1024px ){
 
 
+  .container-desktop{
+    display: flex;
+  }
+
+  .container-menu{
+    display: none;
+  }
 
 }
