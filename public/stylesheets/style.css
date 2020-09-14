@@ -231,21 +231,71 @@ html,body{overflow-x:hidden !important}
       transition: color 1.5s ease;
     }
 
-
     /* SECTION #2 */
+
+    .main-cards-container{
+
+      height: 100vh;
+      height: 100vh;
+      min-width: 320px;
+      padding: 1rem;
+      padding-top:12vh;
+      margin-top:-12vh;
+      /* background-color: red; */
+    }
+
+    .main-cards-container .main-card-content {
+      /* width: 100%;
+      display: flex;
+      flex-wrap: 1; */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 320px);
+        grid-template-rows: repeat(4, 25%);
+      
+  
+    }
+  
+      .main-cards-container .main-card-content .card {
+        width: 100%;
+        height: 25%;
+        background-color: black;
+        overflow: hidden;
+        height: 0;
+        padding-top: 56.25%;
+        margin-bottom: .5rem;
+        
+      }
+  
+  
+      .product-title {
+        margin: 0 auto;
+        max-width: 1024px;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+  
+
+
+
+
+    /* SECTION #3 */
 
     .info-us-container{
       height: 100vh;
       min-width: 320px;
       padding: 1rem;
       text-align: center;
+      margin-bottom: 12vh;
       padding: 0 .5rem;
       padding-top:12vh;
       margin-top:-12vh;
           
     }
     
-    /* SECTION #3 */
+    
 
 
 
@@ -373,20 +423,67 @@ html,body{overflow-x:hidden !important}
   margin-left: 1rem;
 }
 
+
+
+
 /* MAIN Second Section #2 */
 
-.info-us-container{
-
+.main-cards-container{
+  
   margin: 0 auto;
   max-width: 1024px;
   text-align: center;
   padding: 0 .5rem;
   padding-top:12vh;
   margin-top:-12vh;
+/*   background-color: ; */
   
 }
 
+  .main-cards-container .main-card-content {
+    /* width: 100%;
+    display: flex;
+    flex-wrap: 1; */
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 50%);
+      
+
+  }
+
+    .main-cards-container .main-card-content .card {
+      
+      background-color: black;
+      overflow: hidden;
+      height: 0;
+      padding-top: 56.25%;
+      margin: 1rem;
+    }
+
+
+    .product-title {
+      margin: 0 auto;
+      max-width: 1024px;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
 /* MAIN Second Section #3 */
+
+.info-us-container{
+  
+  margin: 12vh auto;
+  max-width: 1024px;
+  text-align: center;
+  padding: 0 .5rem;
+  padding-top:12vh;
+  margin-top:-12vh;
+
+}
+
 
 
 
