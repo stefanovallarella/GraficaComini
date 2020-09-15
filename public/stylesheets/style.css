@@ -86,7 +86,6 @@ html,body{overflow-x:hidden !important}
   }
   
   .main-logo img {
-    
     width: 80px;
     height: 80px;
     padding: 0.3rem;
@@ -98,7 +97,6 @@ html,body{overflow-x:hidden !important}
     align-self: center;
     flex-wrap: wrap;
     width: 50%;
-    
   }
 
   .main-menu{
@@ -177,8 +175,10 @@ html,body{overflow-x:hidden !important}
   /* SECTION #1 */
 .main-banner{
   
- /*  background: url("/images/pruebaBanner.jpg"); */
-  background-color: rgb(22, 26, 26);
+  background: url("/images/home1.jpg");
+  
+  background-size: auto ;
+  /* background-color: rgb(22, 26, 26); */
 }
  
 .main-banner .info-btn-arrow-container {
@@ -234,22 +234,18 @@ html,body{overflow-x:hidden !important}
     /* SECTION #2 */
 
     .main-cards-container{
-
       height: 100vh;
       min-width: 320px;
-      
     }
 
     .main-cards-container .main-card-content {
 
-        
       display: grid;
       grid-template-columns: repeat(1, 100%);
       grid-template-rows: repeat(4, auto);
       grid-gap: .5rem;
       justify-content: center;
       
-  
     }
   
       .main-cards-container .main-card-content .card {
@@ -259,8 +255,6 @@ html,body{overflow-x:hidden !important}
         overflow: hidden;
         height: 0;
         padding-top: 56.25%;
-        
-        
       }
   
   
@@ -291,7 +285,7 @@ html,body{overflow-x:hidden !important}
       text-align: center;
       margin-bottom: 12vh;
       padding: 0 .5rem;
-      padding-top:12vh;
+      padding-top: 43vh;
       margin-top:-12vh;
     }
     
@@ -398,6 +392,14 @@ html,body{overflow-x:hidden !important}
 
   /* MAIN BANNER First Section #1 */
 
+  .main-banner{
+  
+    background: url("/images/home1.jpg");
+    
+    background-size: auto ;
+    /* background-color: rgb(22, 26, 26); */
+  }
+
 
 .main-banner .info-btn-arrow-container .info-container{
     height: 25%;
@@ -444,7 +446,7 @@ html,body{overflow-x:hidden !important}
     /* width: 100%;
     display: flex;
     flex-wrap: 1; */
-      margin-top: .5rem;
+      margin-top: 3rem;
       display: grid;
       justify-content: center;
       grid-template-columns: repeat(2, 50%);
