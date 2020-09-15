@@ -433,6 +433,7 @@ html,body{overflow-x:hidden !important}
 .main-cards-container{
   
   margin: 0 auto;
+  height: 88vh;
   max-width: 1024px;
   width: 60vw;
   text-align: center;
@@ -451,7 +452,7 @@ html,body{overflow-x:hidden !important}
       justify-content: center;
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(2, 50%);
-      grid-gap: 1rem 1rem;
+      grid-gap: 1rem 2rem;
       
 
   }
