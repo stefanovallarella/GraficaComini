@@ -236,22 +236,18 @@ html,body{overflow-x:hidden !important}
     .main-cards-container{
 
       height: 100vh;
-      height: 100vh;
       min-width: 320px;
-      padding: 1rem;
-      padding-top:12vh;
-      margin-top:-12vh;
-      /* background-color: red; */
+      
     }
 
     .main-cards-container .main-card-content {
-      /* width: 100%;
-      display: flex;
-      flex-wrap: 1; */
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(1, 320px);
-        grid-template-rows: repeat(4, 25%);
+
+        
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(4, auto);
+      grid-gap: .5rem;
+      justify-content: center;
       
   
     }
@@ -263,7 +259,7 @@ html,body{overflow-x:hidden !important}
         overflow: hidden;
         height: 0;
         padding-top: 56.25%;
-        margin-bottom: .5rem;
+        
         
       }
   
@@ -275,11 +271,16 @@ html,body{overflow-x:hidden !important}
         padding: 1.5rem;
         font-size: 2rem;
         font-weight: bold;
+        padding-top:16vh;
+        margin-top:-12vh;
+      }
+
+
+      .product-title span{
+        font-size: 2rem;
+        font-weight: bold;
       }
   
-
-
-
 
     /* SECTION #3 */
 
@@ -292,7 +293,6 @@ html,body{overflow-x:hidden !important}
       padding: 0 .5rem;
       padding-top:12vh;
       margin-top:-12vh;
-          
     }
     
     
@@ -432,11 +432,11 @@ html,body{overflow-x:hidden !important}
   
   margin: 0 auto;
   max-width: 1024px;
+  width: 60vw;
   text-align: center;
-  padding: 0 .5rem;
-  padding-top:12vh;
+  padding-top:10vh;
   margin-top:-12vh;
-/*   background-color: ; */
+
   
 }
 
@@ -444,10 +444,12 @@ html,body{overflow-x:hidden !important}
     /* width: 100%;
     display: flex;
     flex-wrap: 1; */
-      margin: 0 auto;
+      margin-top: .5rem;
       display: grid;
+      justify-content: center;
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(2, 50%);
+      grid-gap: 1rem 1rem;
       
 
   }
@@ -458,7 +460,7 @@ html,body{overflow-x:hidden !important}
       overflow: hidden;
       height: 0;
       padding-top: 56.25%;
-      margin: 1rem;
+      
     }
 
 
@@ -466,16 +468,21 @@ html,body{overflow-x:hidden !important}
       margin: 0 auto;
       max-width: 1024px;
       text-align: center;
-      padding: 1.5rem;
+      padding-top: 16vh;
+      margin-top: -12vh;
+    }
+
+    .product-title span{
       font-size: 2rem;
       font-weight: bold;
     }
+
 
 /* MAIN Second Section #3 */
 
 .info-us-container{
   
-  margin: 12vh auto;
+  margin: 0 auto;
   max-width: 1024px;
   text-align: center;
   padding: 0 .5rem;
