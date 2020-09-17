@@ -132,7 +132,7 @@ html,body{overflow-x:hidden !important}
   top: 12vh;
   transition: all ease 750ms;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   background-color: rgba(0, 0, 0, 0.883);
 
 }
@@ -141,7 +141,7 @@ html,body{overflow-x:hidden !important}
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem 1rem;
 }
 
 .menu .main-menu-mobile a{
@@ -174,7 +174,8 @@ html,body{overflow-x:hidden !important}
 
   /* SECTION #1 */
 .main-banner{
-  
+  padding-top: 12vh;
+  margin-top: -12vh;
   background: url("/images/home1.jpg");
   
   background-size: auto ;
@@ -285,11 +286,38 @@ html,body{overflow-x:hidden !important}
       text-align: center;
       margin-bottom: 12vh;
       padding: 0 .5rem;
-      padding-top: 43vh;
-      margin-top:-12vh;
+      padding-top: 12vh;
+      margin-top:22vh;
     }
     
-    
+    /* SECTION #4 */
+
+.clients-container{
+  width: 100%;
+  height: 88vh;
+  margin: 0;
+  text-align: center;
+  padding-top: 12vh;
+  margin-top: -12vh;
+
+}
+
+  .clients-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+    .clients-content .logo-client-container{
+      width: 80vw;
+      height: 35vh;
+      background-color: black;
+      margin: .1rem;
+    }
+
+
 
 
 
@@ -481,7 +509,7 @@ html,body{overflow-x:hidden !important}
     }
 
 
-/* MAIN Second Section #3 */
+/* MAIN Third Section #3 */
 
 .info-us-container{
   
@@ -494,7 +522,96 @@ html,body{overflow-x:hidden !important}
 
 }
 
+/* MAIN Fourth Section #4 */
 
+.clients-container{
+  width: 100%;
+  height: 88vh;
+  text-align: center;
+  padding-top: 12vh;
+  margin-top: -12vh;
+  margin-bottom: 12vh
+}
+
+  .clients-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 88vh;
+  }
+    .clients-content .logo-client-container{
+      width: 47%;
+      height: 38vh;
+      background-color: black;
+      margin: .5rem;
+    }
+
+/* MAIN Fifth Section #5 */
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88vh;
+  padding-top: 20vh;
+  margin-bottom: 12vh;
+  text-align: center;
+}
+
+  .contact-container span{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+  }
+
+
+  .contact-content{
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: black;
+  }
+
+
+  .contact-content form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+    .contact-content form label{
+      color: whitesmoke;
+      text-align: left;
+      font-size: 1.5rem;
+     
+    }
+
+    .contact-content form input{
+      height: 5vh;
+      font-size: 1.5rem;
+    }
+
+    .contact-content form textarea{
+      resize: none;
+      font-size: 1.5rem;
+    }
+
+    .contact-content form button{
+      width: 30%;
+      height: 5vh;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 5%;
+      color: black;
+      background-color: whitesmoke;
+      margin-top: 1rem;
+      margin-left: 70%;
+    }
 
 
 }
