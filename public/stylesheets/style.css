@@ -299,7 +299,7 @@ html,body{overflow-x:hidden !important}
   text-align: center;
   padding-top: 12vh;
   margin-top: -12vh;
-
+  margin-bottom: 80vh;
 }
 
   .clients-content{
@@ -314,8 +314,147 @@ html,body{overflow-x:hidden !important}
       width: 80vw;
       height: 35vh;
       background-color: black;
-      margin: .1rem;
+      margin: .3rem .1rem;
     }
+
+
+/* SECTION #5 */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88vh;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+  .contact-container span{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+  }
+
+
+  .contact-content{
+    width: 100vw;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: black;
+  }
+
+
+  .contact-content form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+    .contact-content form label{
+      color: whitesmoke;
+      text-align: left;
+      font-size: 1rem;
+     
+    }
+
+    .contact-content form input{
+      height: 5vh;
+      font-size: 1rem;
+    }
+
+    .contact-content form textarea{
+      resize: none;
+      font-size: 1rem;
+    }
+
+    .contact-content form button{
+      width: 30%;
+      height: 5vh;
+      font-size: 1rem;
+      
+      border-radius: 5%;
+      color: black;
+      background-color: whitesmoke;
+      margin-top: 1rem;
+      margin-left: 70%;
+    }
+
+
+
+
+
+    /* FOOTER */
+
+    .main-footer {
+      display: flex;
+      justify-content: center;
+      background-color: rgb(14, 49, 49);
+      /* background-color:  rgba(34, 31, 31, 0.972); */
+    }
+    
+    .footer-container{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 1024px;
+      height: 88vh;
+      background-color: rgb(14, 49, 49);
+      margin-top: 1rem;
+      /* background-color: rgba(34, 31, 31, 0.972); */
+    }
+    
+    .footer-content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 70%;
+      margin-bottom: 2.5rem;
+    }
+    
+    .footer-content a{
+      
+    
+    }
+    
+    .footer-content .footer-title{
+      color: whitesmoke;
+      margin-bottom: 1rem;
+    
+    }
+    
+    .footer-content .redes-icons{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    
+    .footer-content .redes-icons .icons{
+      margin-bottom: .5rem;
+      color: whitesmoke;
+    }
+    
+    
+    .footer-content .redes-icons .icons i{
+      font-size: 1.5rem;
+      margin-right: .5rem;
+    }
+    
+    .footer-content .redes-icons .redes span{
+      font-size: 1rem;
+      margin-top: .5rem;
+      color: red;
+      
+    }
+    
+    .footer-content .redes-icons .redes span:nth-child(1){
+      margin-left: .2rem;
+    }
+    
 
 
 
@@ -323,32 +462,31 @@ html,body{overflow-x:hidden !important}
 
 /* FOOTER */
 
-.main-footer {
+/* .main-footer {
   display: flex;
   justify-content: center;
   background-color: rgb(14, 49, 49);
-  /* background-color:  rgba(34, 31, 31, 0.972); */
 }
 
 .footer-container{
   
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 320px;
   max-width: 1024px;
-  height: 20vh;
+  height: 88vh;
   background-color: rgb(14, 49, 49);
-  /* background-color: rgba(34, 31, 31, 0.972); */
 }
 
 .footer-content{
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 30%;
-  margin-top: 2rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-
+  width: 80%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .footer-content span{
@@ -368,7 +506,7 @@ html,body{overflow-x:hidden !important}
   color: greenyellow;
   padding-top: 1rem;  
 
-}
+}   */
 
 
 
@@ -463,11 +601,10 @@ html,body{overflow-x:hidden !important}
   margin: 0 auto;
   height: 88vh;
   max-width: 1024px;
-  width: 60vw;
+  width: 70%;
   text-align: center;
   padding-top:10vh;
   margin-top:-12vh;
-
   
 }
 
@@ -542,8 +679,8 @@ html,body{overflow-x:hidden !important}
     height: 88vh;
   }
     .clients-content .logo-client-container{
-      width: 47%;
-      height: 38vh;
+      width: 45%;
+      height: 35vh;
       background-color: black;
       margin: .5rem;
     }
@@ -612,6 +749,82 @@ html,body{overflow-x:hidden !important}
       margin-top: 1rem;
       margin-left: 70%;
     }
+
+
+
+
+/* FOOTER */
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(14, 49, 49);
+  /* background-color:  rgba(34, 31, 31, 0.972); */
+}
+
+.footer-container{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1024px;
+  height: 25vh;
+  background-color: rgb(14, 49, 49);
+  /* background-color: rgba(34, 31, 31, 0.972); */
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  width: 33%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2.5rem;
+}
+
+.footer-content a{
+  
+
+}
+
+.footer-content .footer-title{
+  color: whitesmoke;
+  margin-bottom: 1rem;
+
+}
+
+.footer-content .redes-icons{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.footer-content .redes-icons .icons{
+  margin-bottom: .5rem;
+  color: whitesmoke;
+}
+
+
+.footer-content .redes-icons .icons i{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+.footer-content .redes-icons .redes span{
+  font-size: 1rem;
+  margin-top: .5rem;
+  color: red;
+  
+}
+
+.footer-content .redes-icons .redes span:nth-child(1){
+  margin-left: .2rem;
+}
+
+
 
 
 }
