@@ -285,9 +285,24 @@ html,body{overflow-x:hidden !important}
       padding: 1rem;
       text-align: center;
       margin-bottom: 12vh;
-      padding: 0 .5rem;
+      padding: 0 1rem;
       padding-top: 12vh;
       margin-top:22vh;
+    }
+    
+
+    .info-us-container .title-about-us{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      padding-top: 1rem;
+    }
+    
+    .info-us-container .title-about-us span{
+      font-size: 2rem;
+      font-weight: bold;
+      padding: .5rem;
+      
     }
     
     /* SECTION #4 */
@@ -297,9 +312,16 @@ html,body{overflow-x:hidden !important}
   height: 88vh;
   margin: 0;
   text-align: center;
-  padding-top: 12vh;
+  padding-top: 13vh;
   margin-top: -12vh;
   margin-bottom: 80vh;
+}
+
+.clients-container span{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  
 }
 
   .clients-content{
@@ -310,12 +332,51 @@ html,body{overflow-x:hidden !important}
     width: 100%;
   }
 
-    .clients-content .logo-client-container{
+  .clients-content .logo-client-container{
+    width: 80vw;
+    height: 35vh;
+  
+  }
+
+  .clients-content .logo-client-container:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients-content .logo-client-container:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients-content .logo-client-container:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients-content .logo-client-container:nth-child(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+    .clients-content .logo-client-container img{
+      width: 75%;
+      height: 75%;
+      padding: 1rem;
+    }
+
+
+
+   /*  .clients-content .logo-client-container{
       width: 80vw;
       height: 35vh;
       background-color: black;
       margin: .3rem .1rem;
-    }
+    } */
 
 
 /* SECTION #5 */
@@ -332,9 +393,10 @@ html,body{overflow-x:hidden !important}
 }
 
   .contact-container span{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
+    margin-bottom: 1rem;
   }
 
 
@@ -356,12 +418,14 @@ html,body{overflow-x:hidden !important}
       color: whitesmoke;
       text-align: left;
       font-size: 1rem;
+      margin: .5rem 0;
      
     }
 
     .contact-content form input{
       height: 5vh;
       font-size: 1rem;
+      
     }
 
     .contact-content form textarea{
@@ -699,11 +763,44 @@ html,body{overflow-x:hidden !important}
     height: 88vh;
   }
     .clients-content .logo-client-container{
+      display: flex;
       width: 45%;
-      height: 37vh;
-      background-color: black;
-      margin: .5rem;
+      height: 30vh;
+      
     }
+
+    .clients-content .logo-client-container:nth-child(1){
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .clients-content .logo-client-container:nth-child(2){
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    .clients-content .logo-client-container:nth-child(3){
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .clients-content .logo-client-container:nth-child(4){
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+
+      .clients-content .logo-client-container img{
+        width: 75%;
+        height: 75%;
+        padding: 1rem;
+      }
+
+
 
 /* MAIN Fifth Section #5 */
 
@@ -750,7 +847,7 @@ html,body{overflow-x:hidden !important}
 
     .contact-content form input{
       height: 5vh;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     .contact-content form textarea{
