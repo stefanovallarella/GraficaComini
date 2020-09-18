@@ -209,7 +209,7 @@ html,body{overflow-x:hidden !important}
 
     .main-banner .info-btn-arrow-container .btn-container a{
       width: 50px;
-      padding: .1rem 5rem;
+      padding: .1rem 1rem;
       font-size: 1.5rem;
       color: whitesmoke;
       background-color: black;
@@ -370,15 +370,15 @@ html,body{overflow-x:hidden !important}
     }
 
     .contact-content form button{
-      width: 30%;
-      height: 5vh;
-      font-size: 1rem;
+      width: 40%;
+      height: 6vh;
+      font-size: 1.5rem;
       
       border-radius: 5%;
       color: black;
       background-color: whitesmoke;
       margin-top: 1rem;
-      margin-left: 70%;
+      margin-left: 60%;
     }
 
 
@@ -403,7 +403,7 @@ html,body{overflow-x:hidden !important}
       max-width: 1024px;
       height: 88vh;
       background-color: rgb(14, 49, 49);
-      margin-top: 1rem;
+      margin-top: 4rem;
       /* background-color: rgba(34, 31, 31, 0.972); */
     }
     
@@ -412,7 +412,7 @@ html,body{overflow-x:hidden !important}
       flex-direction: column;
       text-align: center;
       width: 70%;
-      margin-bottom: 2.5rem;
+      
     }
     
     .footer-content a{
@@ -603,7 +603,7 @@ html,body{overflow-x:hidden !important}
   max-width: 1024px;
   width: 70%;
   text-align: center;
-  padding-top:10vh;
+  padding-top:12vh;
   margin-top:-12vh;
   
 }
@@ -637,7 +637,7 @@ html,body{overflow-x:hidden !important}
       max-width: 1024px;
       text-align: center;
       padding-top: 16vh;
-      margin-top: -12vh;
+      margin-top: -8vh;
     }
 
     .product-title span{
@@ -653,10 +653,24 @@ html,body{overflow-x:hidden !important}
   margin: 0 auto;
   max-width: 1024px;
   text-align: center;
-  padding: 0 .5rem;
-  padding-top:12vh;
-  margin-top:-12vh;
+  margin-bottom: -12vh;
+  padding-top: 12vh;
+  padding-left: .5rem;
+  padding-right: .5rem;
 
+}
+
+.info-us-container .title-about-us{
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.info-us-container .title-about-us span{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem;
+  
 }
 
 /* MAIN Fourth Section #4 */
@@ -670,6 +684,12 @@ html,body{overflow-x:hidden !important}
   margin-bottom: 12vh
 }
 
+.clients-container span{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
   .clients-content{
     display: flex;
     flex-wrap: wrap;
@@ -680,7 +700,7 @@ html,body{overflow-x:hidden !important}
   }
     .clients-content .logo-client-container{
       width: 45%;
-      height: 35vh;
+      height: 37vh;
       background-color: black;
       margin: .5rem;
     }
@@ -739,15 +759,15 @@ html,body{overflow-x:hidden !important}
     }
 
     .contact-content form button{
-      width: 30%;
-      height: 5vh;
-      font-size: 2rem;
-      font-weight: bold;
-      border-radius: 5%;
-      color: black;
-      background-color: whitesmoke;
-      margin-top: 1rem;
-      margin-left: 70%;
+      width: 17%; 
+      height: 5vh; 
+      font-size: 1.8rem; 
+      border-radius: 5%; 
+      color: black; 
+      background-color: whitesmoke; 
+      margin-top: 1rem; 
+      margin-left: 83%;
+      
     }
 
 
@@ -767,8 +787,11 @@ html,body{overflow-x:hidden !important}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 1024px;
-  height: 25vh;
+  height: 20vh;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   background-color: rgb(14, 49, 49);
   /* background-color: rgba(34, 31, 31, 0.972); */
 }
@@ -781,16 +804,17 @@ html,body{overflow-x:hidden !important}
   width: 33%;
   padding-right: 2rem;
   padding-left: 2rem;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
 
-.footer-content a{
-  
+.footer-content span{
+    color: whitesmoke;
 
 }
 
 .footer-content .footer-title{
   color: whitesmoke;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 
 }
@@ -804,13 +828,13 @@ html,body{overflow-x:hidden !important}
 
 .footer-content .redes-icons .icons{
   margin-bottom: .5rem;
-  color: whitesmoke;
 }
 
 
 .footer-content .redes-icons .icons i{
   font-size: 1.5rem;
   margin-right: .5rem;
+  color: whitesmoke;
 }
 
 .footer-content .redes-icons .redes span{
