@@ -17,7 +17,6 @@ html { scroll-behavior: smooth }
 body {
   margin: 0;
   padding: 0;
-  padding-top: 12vh;
   font-family: "ArmataRegular";
 }
 
@@ -386,10 +385,15 @@ html,body{overflow-x:hidden !important}
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 320px;
   width: 100%;
   height: 88vh;
   padding-top: 20vh;
   text-align: center;
+
+  /* background-color: lightskyblue; */
+  background: url("/images/home1.jpg");
+  background-size: auto;
 }
 
   .contact-container span{
@@ -469,6 +473,7 @@ html,body{overflow-x:hidden !important}
       background-color: rgb(14, 49, 49);
       margin-top: 4rem;
       /* background-color: rgba(34, 31, 31, 0.972); */
+
     }
     
     .footer-content{
@@ -606,6 +611,18 @@ html,body{overflow-x:hidden !important}
     display: flex;
   }
 
+   /* HEADER */
+
+ .main-header {
+  z-index: 999;
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  padding: 0 1rem;
+  background-color: #ced4da;
+  min-height: 12vh;
+}
+
   /* HEADER Mobile */
 
   .container-menu{
@@ -623,9 +640,7 @@ html,body{overflow-x:hidden !important}
   /* MAIN BANNER First Section #1 */
 
   .main-banner{
-  
     background: url("/images/home1.jpg");
-    
     background-size: auto ;
     /* background-color: rgb(22, 26, 26); */
   }
@@ -663,12 +678,11 @@ html,body{overflow-x:hidden !important}
 .main-cards-container{
   
   margin: 0 auto;
-  height: 88vh;
+  height: 100vh;
   max-width: 1024px;
-  width: 70%;
+  width: 75%;
   text-align: center;
-  padding-top:12vh;
-  margin-top:-12vh;
+  margin-bottom: -18vh;
   
 }
 
@@ -700,8 +714,7 @@ html,body{overflow-x:hidden !important}
       margin: 0 auto;
       max-width: 1024px;
       text-align: center;
-      padding-top: 16vh;
-      margin-top: -8vh;
+      padding-top: 5vh;
     }
 
     .product-title span{
@@ -717,11 +730,11 @@ html,body{overflow-x:hidden !important}
   margin: 0 auto;
   max-width: 1024px;
   text-align: center;
-  margin-bottom: -12vh;
-  padding-top: 12vh;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding: 0 .5rem;
+}
 
+.info-us-container span{
+  font-size: 1.5rem;
 }
 
 .info-us-container .title-about-us{
@@ -734,24 +747,24 @@ html,body{overflow-x:hidden !important}
   font-size: 2rem;
   font-weight: bold;
   padding: .5rem;
-  
 }
 
 /* MAIN Fourth Section #4 */
 
 .clients-container{
   width: 100%;
-  height: 88vh;
+  height: 100vh;
   text-align: center;
-  padding-top: 12vh;
-  margin-top: -12vh;
-  margin-bottom: 12vh
+  padding-top: 4rem;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
 }
 
 .clients-container span{
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
   .clients-content{
@@ -759,8 +772,9 @@ html,body{overflow-x:hidden !important}
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: 80%;
-    height: 88vh;
+    width: 65%;
+    height: 70vh;
+    padding-top: 2rem;
   }
     .clients-content .logo-client-container{
       display: flex;
@@ -771,26 +785,26 @@ html,body{overflow-x:hidden !important}
 
     .clients-content .logo-client-container:nth-child(1){
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
     }
 
     .clients-content .logo-client-container:nth-child(2){
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
     }
 
     .clients-content .logo-client-container:nth-child(3){
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
 
     .clients-content .logo-client-container:nth-child(4){
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
 
 
@@ -805,21 +819,32 @@ html,body{overflow-x:hidden !important}
 /* MAIN Fifth Section #5 */
 
 
+.pre-form{
+  background-color: lightsalmon;
+  width: 100%;
+  height: 30vh;
+}
+
+
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 88vh;
-  padding-top: 20vh;
-  margin-bottom: 12vh;
+  height: 80vh;
+  padding-top: 0vh;
+  margin-bottom: 0vh;
   text-align: center;
+  /* background-color: lightskyblue; */
+  background: url("/images/home1.jpg");
+  background-size: auto;
+  
 }
 
   .contact-container span{
     font-size: 2rem;
-    color: black;
+    color: whitesmoke;
     font-weight: bold;
   }
 
@@ -827,44 +852,58 @@ html,body{overflow-x:hidden !important}
   .contact-content{
     width: 80%;
     max-width: 1024px;
+    height: 80%;
     margin: 0 auto;
-    background-color: black;
+    background-color: transparent;
   }
 
 
   .contact-content form{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0rem 1rem 2rem;
+    
   }
 
     .contact-content form label{
       color: whitesmoke;
       text-align: left;
       font-size: 1.5rem;
-     
     }
 
     .contact-content form input{
       height: 5vh;
-      font-size: 1rem;
+      width: 50%;
+      /* font-size: 1rem; */
+      border: solid 1px whitesmoke;
+      border-radius: 7px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: whitesmoke;
+      font-size: 1.5em;
+      padding: 0 15px;
     }
 
     .contact-content form textarea{
       resize: none;
       font-size: 1.5rem;
+      border: solid 1px whitesmoke;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: whitesmoke;
+      font-size: 1.5em;
+      padding: 0 15px;
     }
 
     .contact-content form button{
-      width: 17%; 
-      height: 5vh; 
-      font-size: 1.8rem; 
-      border-radius: 5%; 
-      color: black; 
-      background-color: whitesmoke; 
-      margin-top: 1rem; 
-      margin-left: 83%;
-      
+      width: 240px;
+      height: 50px;
+      background-color: rgb(14, 49, 49);
+      color: #FFFFFF;
+      border: none;
+      font-size: 1.7em;
+      border-radius: 7px;
+      margin-left: auto;
+      cursor: pointer;
     }
 
 
