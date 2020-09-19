@@ -185,7 +185,7 @@ html,body{overflow-x:hidden !important}
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 88vh;
+  height: 100vh;
   padding: 1rem .5rem 0;
 
 }
@@ -398,9 +398,8 @@ html,body{overflow-x:hidden !important}
 
   .contact-container span{
     font-size: 2rem;
-    color: black;
+    color: whitesmoke;
     font-weight: bold;
-    margin-bottom: 1rem;
   }
 
 
@@ -408,14 +407,17 @@ html,body{overflow-x:hidden !important}
     width: 100vw;
     max-width: 1024px;
     margin: 0 auto;
-    background-color: black;
+    margin-bottom: 2vh;
+      
+
+    
   }
 
 
   .contact-content form{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
   }
 
     .contact-content form label{
