@@ -283,7 +283,7 @@ html,body{overflow-x:hidden !important}
       min-width: 320px;
       padding: 1rem;
       text-align: center;
-      margin-bottom: -30vh;
+      margin-bottom: 0vh;
       /* margin-bottom: 12vh; */
       padding: 0 1rem;
       padding-top: 12vh;
@@ -398,16 +398,11 @@ html,body{overflow-x:hidden !important}
   align-items: center;
   justify-content: center;
   min-width: 320px;
- /*  width: 100%;
-  height: 88vh;
-  padding-top: 20vh;
-  text-align: center; */
-
-  min-width: 320px;
   width: 100%;
   height: 100vh;
   padding-top: 18vh;
   text-align: center;
+  padding-bottom: 10vh;
 
   /* background-color: lightskyblue; */
   background: url("/images/home1.jpg");
@@ -437,7 +432,7 @@ html,body{overflow-x:hidden !important}
   .contact-content form{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
   }
 
     .contact-content form label{
@@ -451,24 +446,42 @@ html,body{overflow-x:hidden !important}
     .contact-content form input{
       height: 5vh;
       font-size: 1rem;
+      width: 80%;
+      /* font-size: 1rem; */
+      border: solid 1px whitesmoke;
+      border-radius: 7px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: whitesmoke;
+      font-size: 1rem;
+      padding: 0 10px;
       
     }
 
     .contact-content form textarea{
       resize: none;
+      border: solid 1px whitesmoke;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: whitesmoke;
       font-size: 1rem;
+      padding: 0 10px;
     }
 
     .contact-content form button{
       width: 40%;
-      height: 6vh;
+      height: 7vh;
       font-size: 1.5rem;
-      
-      border-radius: 5%;
-      color: black;
-      background-color: whitesmoke;
-      margin-top: 1rem;
-      margin-left: 60%;
+      margin-top: .5rem;
+      /* margin-left: 60%; */ 
+      /* width: 180px;
+      height: 40px; */
+      background-color: rgb(14, 49, 49);
+      color: #FFFFFF;
+      border: none;
+      font-size: 1rem;
+      border-radius: 7px;
+      margin-left: auto;
+      cursor: pointer;
     }
 
 
@@ -481,6 +494,7 @@ html,body{overflow-x:hidden !important}
       display: flex;
       justify-content: center;
       background-color: rgb(14, 49, 49);
+      height: 90vh;
       /* background-color:  rgba(34, 31, 31, 0.972); */
     }
     
@@ -493,7 +507,7 @@ html,body{overflow-x:hidden !important}
       max-width: 1024px;
       height: 88vh;
       background-color: rgb(14, 49, 49);
-      margin-top: 4rem;
+      margin-top: 1rem;
       /* background-color: rgba(34, 31, 31, 0.972); */
 
     }
@@ -514,6 +528,7 @@ html,body{overflow-x:hidden !important}
     .footer-content .footer-title{
       color: whitesmoke;
       margin-bottom: 1rem;
+      font-size: 1.3rem;
     
     }
     
@@ -753,7 +768,6 @@ html,body{overflow-x:hidden !important}
   max-width: 1024px;
   text-align: center;
   padding: 0 .5rem;
-
 }
 
 .info-us-container span{
@@ -856,7 +870,7 @@ html,body{overflow-x:hidden !important}
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   padding-top: 0vh;
   margin-bottom: 0vh;
   text-align: center;
@@ -939,6 +953,7 @@ html,body{overflow-x:hidden !important}
   display: flex;
   justify-content: center;
   background-color: rgb(14, 49, 49);
+  height: 25vh;
   /* background-color:  rgba(34, 31, 31, 0.972); */
 }
 
@@ -952,6 +967,7 @@ html,body{overflow-x:hidden !important}
   height: 20vh;
   margin-top: 0;
   margin-bottom: 1.5rem;
+  padding-top: 1rem;
   background-color: rgb(14, 49, 49);
   /* background-color: rgba(34, 31, 31, 0.972); */
 }
@@ -983,10 +999,12 @@ html,body{overflow-x:hidden !important}
   display: flex;
   justify-content: center;
   align-content: center;
+  
 }
 
 
 .footer-content .redes-icons .icons{
+  
   margin-bottom: .5rem;
 }
 
@@ -1008,6 +1026,15 @@ html,body{overflow-x:hidden !important}
   margin-left: .2rem;
 }
 
+.footer-content .span-redes span{
+
+}
+
+.span-footer,
+.redes-icons-container{
+  height: 4rem;
+
+}
 
 
 
