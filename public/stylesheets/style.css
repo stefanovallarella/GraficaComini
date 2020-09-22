@@ -35,7 +35,7 @@ html,body{overflow-x:hidden !important}
   width: 100vw;
   top: 0;
   padding: 0 1rem;
-  background-color: #ced4da;
+  background-color: #2a2a2a;
   min-height: 12vh;
 }
 
@@ -47,7 +47,7 @@ html,body{overflow-x:hidden !important}
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #ced4da;
+  background-color: #2a2a2a;
   padding: .5rem 0;
   }
   
@@ -67,7 +67,8 @@ html,body{overflow-x:hidden !important}
   }
   
   .container-menu .logo img{ 
-    height: 10vh;
+    height: 11vh;
+    width: auto;
     margin: 0 auto;
   }
   
@@ -104,7 +105,7 @@ html,body{overflow-x:hidden !important}
     width: 100%;
   }
 
-.main-menu a{
+/* .main-menu a{
   margin-right: 3.5rem;
   padding: 0.4rem;
   outline: none;
@@ -122,7 +123,7 @@ html,body{overflow-x:hidden !important}
   cursor: pointer;
   color: #2ec4b6;
   
-}
+} */
 
 /* Menu Mobile */
 
@@ -400,7 +401,8 @@ html,body{overflow-x:hidden !important}
   min-width: 320px;
   width: 100%;
   height: 100vh;
-  padding-top: 18vh;
+  padding-top: 27vh;
+  /* padding-top: 18vh; */
   text-align: center;
   padding-bottom: 10vh;
 
@@ -643,6 +645,7 @@ html,body{overflow-x:hidden !important}
 
   .container-desktop{
     display: flex;
+    background-color: #2a2a2a;
   }
 
    /* HEADER */
@@ -653,14 +656,43 @@ html,body{overflow-x:hidden !important}
   width: 100vw;
   top: 0;
   padding: 0 1rem;
-  background-color: #ced4da;
+  background-color: #2a2a2a;
   min-height: 12vh;
+}
+
+/* HEADER Desktop */
+
+.main-logo img {
+  width: auto;
+  height: 12vh;
+  padding: 0.3rem;
+}
+
+.main-menu a{
+  margin-right: 3.5rem;
+  padding: 0.4rem;
+  outline: none;
+  border-radius: 5%;
+  background-color: #2a2a2a;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.main-menu a:first-child{
+  color: whitesmoke;
+}
+
+.main-menu a:hover{
+  cursor: pointer;
+  color: #00ADEF;
+  
 }
 
   /* HEADER Mobile */
 
   .container-menu{
     display: none;
+    
   }
 
 
@@ -677,6 +709,11 @@ html,body{overflow-x:hidden !important}
     background: url("/images/home1.jpg");
     background-size: auto ;
     /* background-color: rgb(22, 26, 26); */
+  }
+
+  .main-banner .info-btn-arrow-container{
+
+    height: 88vh;
   }
 
 
@@ -708,6 +745,13 @@ html,body{overflow-x:hidden !important}
 
 
 /* MAIN Second Section #2 */
+
+
+.back-products{
+
+  background-color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 20vh;
+}
 
 .main-cards-container{
   
@@ -792,6 +836,7 @@ html,body{overflow-x:hidden !important}
   padding-top: 4rem;
   margin-top: 0vh;
   margin-bottom: 0vh;
+  background-color: rgba(0, 0, 0, 0.35);
 
 }
 
@@ -872,7 +917,7 @@ html,body{overflow-x:hidden !important}
   margin-bottom: 0vh;
   text-align: center;
   /* background-color: lightskyblue; */
-  background: url("/images/home1.jpg");
+  background: url("/images/back-form.jpg");
   background-size: auto;
   
 }
@@ -932,7 +977,7 @@ html,body{overflow-x:hidden !important}
     .contact-content form button{
       width: 240px;
       height: 50px;
-      background-color: rgb(14, 49, 49);
+      background-color: #2a2a2a;
       color: #FFFFFF;
       border: none;
       font-size: 1.7em;
@@ -949,7 +994,8 @@ html,body{overflow-x:hidden !important}
 .main-footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(14, 49, 49);
+  background-color: #2a2a2a;
+  /* background-color: rgb(14, 49, 49); */
   height: 25vh;
   /* background-color:  rgba(34, 31, 31, 0.972); */
 }
@@ -965,7 +1011,8 @@ html,body{overflow-x:hidden !important}
   margin-top: 0;
   margin-bottom: 1.5rem;
   padding-top: 1rem;
-  background-color: rgb(14, 49, 49);
+  background-color: #2a2a2a;
+  /* background-color: rgb(14, 49, 49); */
   /* background-color: rgba(34, 31, 31, 0.972); */
 }
 
