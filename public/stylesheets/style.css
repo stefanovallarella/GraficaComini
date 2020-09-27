@@ -741,7 +741,6 @@ html,body{overflow-x:hidden !important}
   }
 
   .main-banner .info-btn-arrow-container{
-
     height: 88vh;
   }
 
@@ -815,6 +814,7 @@ html,body{overflow-x:hidden !important}
       /*  overflow: hidden; */
       position: relative;
       width: 100%;
+      cursor: pointer;
        /* height: 0;
        padding-top: 56.25%;  */
       
@@ -825,7 +825,7 @@ html,body{overflow-x:hidden !important}
       display: block;
       width: 100%;
       height: auto;
-      transition: .5s ease;
+      transition: .5s linear;
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -834,7 +834,7 @@ html,body{overflow-x:hidden !important}
 
     .main-cards-container .main-card-content .card .info-product{
       width: 100%;
-      transition: .5s ease;
+      transition: 1.5s ease-in;
       opacity: 0;
       position: absolute;
       top: 25%;
@@ -844,25 +844,48 @@ html,body{overflow-x:hidden !important}
       text-align: center;
     }
 
+    .main-card-content .card .arrow-container-product {
+      z-index: 999;
+      width: 100%;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      transition: 1s ease-in-out;
+    }
+    
+      .main-card-content .card .arrow-container-product i{
+          font-size: 2.5rem;
+          color: black;
+        }
+
     .main-cards-container .main-card-content .card:hover img{
-      opacity: 0.3;
+      /* opacity: 0.3; */
     }
     
     .main-cards-container .main-card-content .card:hover .info-product{
-      opacity: 1;
+      
+      
     }
+
+    .main-cards-container .main-card-content .card:hover .arrow-container-product{
+      
+    } 
 
 .card .info-product .text-product {
      width: 100%;
     }
 
     .card .info-product .text-product span {
-        color: whitesmoke;
+        color: black;
         font-weight: bold;
         font-size: 1rem;
         padding: .5rem;
     }
 
+
+
+    
     .product-title {
       margin: 0 auto;
       max-width: 1024px;
