@@ -825,7 +825,7 @@ html,body{overflow-x:hidden !important}
       display: block;
       width: 100%;
       height: auto;
-      transition: .5s linear;
+      transition: .3s linear;
       backface-visibility: hidden;
       position: absolute;
       top: 0;
