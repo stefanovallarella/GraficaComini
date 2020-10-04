@@ -164,11 +164,9 @@
       
         <span>CONTACTO</span>
 
-      <% console.log(locals.errors) %> 
-
       <div class="contact-content">
         
-        <form action="/email" method="POST">
+        <form id="form" action="/email" method="POST">
 
           <label for="nombre">Nombre</label>
             <input id="name" type="text" name="name" placeholder="Juan"> 
@@ -190,6 +188,7 @@
           
           <label for="mensaje">Mensaje</label> 
           <textarea name="message" id="message" cols="30" rows="10" ></textarea> 
+
           <span id="message_error"  class="error"> 
             <%= locals && locals.errors && locals.errors.message && locals.errors.message.msg %> 
           </span>   
