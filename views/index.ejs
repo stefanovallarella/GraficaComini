@@ -164,21 +164,35 @@
       
         <span>CONTACTO</span>
 
+      <% console.log(locals.errors) %> 
+
       <div class="contact-content">
         
         <form action="/email" method="POST">
 
           <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="name" placeholder="Juan" required> 
-          
+            <input id="name" type="text" name="name" placeholder="Juan"> 
+          <span id="name_error"  class="error"> 
+            <%= locals && locals.errors && locals.errors.name && locals.errors.name.msg %> 
+          </span>
+
           <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="juangonzalez@gmail.com" required> 
+            <input id="email" type="email" name="email" placeholder="juangonzalez@gmail.com" >
+          <span id="email_error"  class="error"> 
+            <%= locals && locals.errors && locals.errors.email && locals.errors.email.msg %> 
+          </span> 
           
           <label for="phone">Teléfono</label>
-            <input type="phone" name="phone" id="phone" placeholder="+54 341 660011">
+            <input type="phone" name="phone" id="phone" placeholder="341 660011">
+          <span id="phone_error"  class="error"> 
+            <%= locals && locals.errors && locals.errors.phone && locals.errors.phone.msg %> 
+          </span>   
           
           <label for="mensaje">Mensaje</label> 
-          <textarea name="message" id="mensaje" cols="30" rows="10" required></textarea> 
+          <textarea name="message" id="message" cols="30" rows="10" ></textarea> 
+          <span id="message_error"  class="error"> 
+            <%= locals && locals.errors && locals.errors.message && locals.errors.message.msg %> 
+          </span>   
           
           <button type="submit">ENVIAR</button>
           </form>
@@ -191,6 +205,7 @@
     <!--FOOTER -->
     <%- include("./partials/footer") %>
 
+    <script src="javascripts/validation-form.js"></script>
 
   </body>
 </html>

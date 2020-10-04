@@ -16,7 +16,7 @@ module.exports = {
             .notEmpty().withMessage("El campo teléfono no puede estar vacío"),
 
         check("message")
-            .notEmpty.withMessage("El mensaje no puede estar vacío").bail()
+            .notEmpty().withMessage("El mensaje no puede estar vacío").bail()
             .isLength({min: 50 }).withMessage('El mensaje debe tener al menos 50 caracteres')
 
     ]
