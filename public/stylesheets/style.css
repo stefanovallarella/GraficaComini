@@ -262,7 +262,7 @@ html,body{overflow-x:hidden !important}
           justify-content: center;
           grid-template-columns: repeat(1, 100%);
           grid-template-rows: repeat(4, auto);
-          grid-gap: 13rem;
+          grid-gap: 33vh;
       }
     
         .main-cards-container .main-card-content .card {
@@ -274,6 +274,7 @@ html,body{overflow-x:hidden !important}
           position: relative;
           width: 100%;
           cursor: pointer;
+          margin-bottom: 1rem;
            /* height: 0;
            padding-top: 56.25%;  */
           
@@ -308,9 +309,9 @@ html,body{overflow-x:hidden !important}
           width: 100%;
           height: auto;
           position: absolute;
-          top: 10rem;
           opacity: 1;
           transition: 1s ease-in-out;  
+          top: 25vh;
         }
         
           .main-card-content .card .arrow-container-product i{
