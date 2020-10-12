@@ -32,8 +32,8 @@ let controller =
                     port: 587,
                     // secure: account.smtp.secure,
                     auth: {
-                        user: "stefano.canalla@gmail.com",
-                        pass: "ghjqwe123zxcasd"
+                        user: "",
+                        pass: ""
                     }/* ,
                     logger: true,
                     debug: false // include SMTP traffic in the logs */
