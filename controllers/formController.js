@@ -1,8 +1,7 @@
 const nodemailer = require('nodemailer');
 const { validationResult } = require('express-validator');
-
-
-
+const dotenv = require('dotenv');
+dotenv.config();  
 
 let controller = 
 {
@@ -12,8 +11,6 @@ let controller =
         console.log(errors);
         let dataEmail = req.body;
         
-      
-
         // let transporter = nodemailer.createTransport(options[, defaults]);
         // Generate SMTP service account from ethereal.email
         // nodemailer.createTestAccount((err, account) => {
@@ -32,8 +29,9 @@ let controller =
                     port: 587,
                     // secure: account.smtp.secure,
                     auth: {
-                        user: "",
-                        pass: ""
+                        
+                        user: process.env.F_EMAIL,
+                        pass: process.env.F_PASSWORD
                     }/* ,
                     logger: true,
                     debug: false // include SMTP traffic in the logs */
