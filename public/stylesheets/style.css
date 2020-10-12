@@ -1053,11 +1053,11 @@ html,body{overflow-x:hidden !important}
   height: 100vh;
   padding-top: 0vh;
   margin-bottom: 0vh;
+  padding-bottom: 0vh;
   text-align: center;
   /* background-color: lightskyblue; */
   background: url("/images/back-form.jpg");
   background-size: auto;
-  
 }
 
   .contact-container span{
@@ -1070,7 +1070,7 @@ html,body{overflow-x:hidden !important}
   .contact-content{
     width: 80%;
     max-width: 1024px;
-    height: 80%;
+    
     margin: 0 auto;
     background-color: transparent;
   }
@@ -1080,7 +1080,6 @@ html,body{overflow-x:hidden !important}
     display: flex;
     flex-direction: column;
     padding: 0rem 1rem 2rem;
-    
   }
 
     .contact-content form label{
