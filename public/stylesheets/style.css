@@ -965,13 +965,13 @@ html,body{overflow-x:hidden !important}
       margin: 0 auto;
       max-width: 1024px;
       text-align: center;
-      padding-top: 5vh;
-      margin-bottom: 5vh;
+      margin-bottom: 3rem;
     }
 
     .product-title span{
       font-size: 2rem;
       font-weight: bold;
+      color: whitesmoke;
     }
 
 
