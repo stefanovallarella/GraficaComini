@@ -16,18 +16,43 @@ btn.addEventListener("click", function(e){
     if(menu.style.top == "-100vh"){
         burger.style.display = "none";
         cross.style.display = "inline-block";
-        /* burger.style.opacity= 0;
-        cross.style.opacity= 1; */
         menu.style.top = "12vh";
     } else{   
         menu.style.top = "-100vh"
         cross.style.display = "none";
         burger.style.display = "inline-block";
-      /*   cross.style.opacity= 0;
-        burger.style.opacity= 1; */
     }
 
 });
+
+// Items menu mobile (class="item-menu-mobile")
+
+let itemsMenuMobile = document.getElementsByClassName("item-menu-mobile");
+
+console.log(itemsMenuMobile);
+
+Array.prototype.forEach.call(itemsMenuMobile, (item)=>{
+
+    item.addEventListener("click", function(){
+        menu.style.top = "-100vh";
+        menu.style.transitionDuration = "1.2s";
+        cross.style.display = "none";
+        burger.style.display = "inline-block";
+    });
+
+})
+
+/* itemsMenuMobile.forEach(item => {
+    
+    item.addEventListener("click", function(){
+
+        menu.style.top = "-100vh"
+
+    })
+
+}); */
+
+
 
 
 // product #1
