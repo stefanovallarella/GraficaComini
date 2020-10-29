@@ -29,7 +29,6 @@ btn.addEventListener("click", function(e){
 
 let itemsMenuMobile = document.getElementsByClassName("item-menu-mobile");
 
-console.log(itemsMenuMobile);
 
 Array.prototype.forEach.call(itemsMenuMobile, (item)=>{
 
@@ -41,19 +40,6 @@ Array.prototype.forEach.call(itemsMenuMobile, (item)=>{
     });
 
 })
-
-/* itemsMenuMobile.forEach(item => {
-    
-    item.addEventListener("click", function(){
-
-        menu.style.top = "-100vh"
-
-    })
-
-}); */
-
-
-
 
 // product #1
 
