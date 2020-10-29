@@ -1,15 +1,30 @@
 window.addEventListener("load", function(){
 
+// Burger y cross - Menu mobile
+
+let burger = document.getElementById("burger");
+let cross = document.getElementById("cross");
+
 
 let menu = document.getElementById("menu");
 let btn = document.getElementById("btn-menu");
 
+// Menu mobile
+
 btn.addEventListener("click", function(e){
 
     if(menu.style.top == "-100vh"){
+        burger.style.display = "none";
+        cross.style.display = "inline-block";
+        /* burger.style.opacity= 0;
+        cross.style.opacity= 1; */
         menu.style.top = "12vh";
     } else{   
         menu.style.top = "-100vh"
+        cross.style.display = "none";
+        burger.style.display = "inline-block";
+      /*   cross.style.opacity= 0;
+        burger.style.opacity= 1; */
     }
 
 });
@@ -117,6 +132,7 @@ let imagenOne4 = document.getElementById("image-4");
             arrowCard4.style.opacity = 0;
             imagenOne4.style.opacity = 1;
         })        
+
 
 
 

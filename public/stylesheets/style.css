@@ -57,7 +57,7 @@ html,body{overflow-x:hidden !important}
   }
   
   .container-menu i {
-    color:black;
+    color:whitesmoke;
     font-size: 2rem;
   }
   
@@ -71,7 +71,15 @@ html,body{overflow-x:hidden !important}
     width: auto;
     margin: 0 auto;
   }
+
+  #burger{
+    display: inline-block;
+  }
   
+  #cross{
+    display: none;
+  }
+
   /* HEADER Desktop */
   
   .container-desktop{
