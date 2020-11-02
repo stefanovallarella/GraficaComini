@@ -25,6 +25,7 @@ btn.addEventListener("click", function(e){
 
 });
 
+
 // Items menu mobile (class="item-menu-mobile")
 
 let itemsMenuMobile = document.getElementsByClassName("item-menu-mobile");
@@ -40,6 +41,19 @@ Array.prototype.forEach.call(itemsMenuMobile, (item)=>{
     });
 
 })
+
+
+// Mobile menu closes when clicking outside
+
+window.addEventListener("click", function(e){
+    if(e.target != menu && e.target.parentNode != menu && e.target != cross && e.target != burger){
+        menu.style.top = "-100vh";
+        cross.style.display = "none";
+        burger.style.display = "inline-block";
+    }
+}) 
+
+
 
 // product #1
 
@@ -159,38 +173,6 @@ let buttonViewMore4 = document.getElementById("view-more-button-4");
 
 
 
-
-
-
-
-
-
-/* let productCard4 = document.getElementById("card-4");
-let arrowCard4 = document.getElementById("arrow-4");
-let productInfo4 = document.getElementById("product-4");
-let imagenOne4 = document.getElementById("image-4");
-
-    productCard4.addEventListener("mouseover", function(){
-        arrowCard4.style.opacity = 1;
-        imagenOne4.style.opacity = .6;
-        // imagenOne.style.transition = .4;
-    })
-
-    productCard4.addEventListener("click", function(){
-        arrowCard4.style.opacity = 0;
-        productInfo4.style.opacity = 1;
-        imagenOne4.style.opacity = .1;
-    })
-
-    productCard4.addEventListener("mouseout", function(){
-            productInfo4.style.opacity = 0;
-            arrowCard4.style.opacity = 0;
-            imagenOne4.style.opacity = 1;
-        })        
-
-
-
- */
 
 
 

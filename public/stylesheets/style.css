@@ -89,6 +89,7 @@ html,body{overflow-x:hidden !important}
     height: 12vh;
     padding: 15px 0 10px;
   }
+
   .main-logo{
     justify-self: flex-start;
   }
@@ -215,7 +216,7 @@ html,body{overflow-x:hidden !important}
     .main-banner .info-btn-arrow-container .info-container span.title-main{
       text-align: left;
       color: whitesmoke;
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: .5rem;
     }
 
@@ -255,7 +256,7 @@ html,body{overflow-x:hidden !important}
 
     .back-products{
       /* background-color: rgba(0, 0, 0, 0.35); */
-      margin-bottom: 20vh;
+      margin-bottom: 0vh;
       padding-top: 12vh;
       margin-top: -12vh;
     }
@@ -385,7 +386,7 @@ html,body{overflow-x:hidden !important}
       /* margin-bottom: 12vh; */
       padding: 0 1rem;
       padding-top: 12vh;
-      margin-top:22vh;
+      margin-top: 0vh;
     }
     
 
@@ -418,9 +419,9 @@ html,body{overflow-x:hidden !important}
   height: 100vh;
   margin: 0;
   text-align: center;
-  padding-top: 19vh;
-  margin-top: 80vh;
-  margin-bottom: 66vh;
+  padding-top: 20vh;
+  margin-top: 0vh;
+  margin-bottom: 70vh;
 
 
   
@@ -502,12 +503,9 @@ html,body{overflow-x:hidden !important}
   /* padding-top: 18vh; */
   text-align: center;
   padding-bottom: 10vh;
-
   /* background-color: lightskyblue; */
   background: url("/images/home1.jpg");
   background-size: auto;
-
-
 }
 
   .contact-container span{
@@ -522,9 +520,6 @@ html,body{overflow-x:hidden !important}
     max-width: 1024px;
     margin: 0 auto;
     margin-bottom: 2vh;
-      
-
-    
   }
 
 
@@ -571,9 +566,6 @@ html,body{overflow-x:hidden !important}
       height: 7vh;
       font-size: 1.5rem;
       margin-top: .5rem;
-      /* margin-left: 60%; */ 
-      /* width: 180px;
-      height: 40px; */
       background-color: #2a2a2a;
       color: #FFFFFF;
       border: none;
@@ -583,8 +575,25 @@ html,body{overflow-x:hidden !important}
       cursor: pointer;
     }
 
+    /*FORM ERRORS */
 
+      span.error{
+        font-size: .8rem;
+        font-weight: 500;
+        padding: .3rem;
+        text-align: left;
+        color: #c5250b;
+      }
 
+      .contact-content form input.error-input{
+      /* border: solid 1px rgb(197, 37, 11); */
+      background-color: rgba(82, 15, 5, 0.75);
+      }
+
+      .contact-content form textarea.error-input{
+      /* border: solid 1px rgb(197, 37, 11); */
+      background-color: rgba(82, 15, 5, 0.75);
+      }
 
 
     /* FOOTER */
@@ -608,7 +617,6 @@ html,body{overflow-x:hidden !important}
       background-color: #2a2a2a;
       margin-top: 1rem;
       /* background-color: rgba(34, 31, 31, 0.972); */
-
     }
     
     .footer-content{
@@ -616,16 +624,18 @@ html,body{overflow-x:hidden !important}
       flex-direction: column;
       text-align: center;
       width: 70%;
-      
     }
-    
-  
     
     .footer-content .footer-title{
       color: whitesmoke;
       margin-bottom: 1rem;
       font-size: 1.3rem;
+      font-weight: bold;
     
+    }
+
+    .footer-content .span-footer span{
+      color: whitesmoke;
     }
     
     .footer-content .redes-icons{
@@ -656,7 +666,11 @@ html,body{overflow-x:hidden !important}
     .footer-content .redes-icons .redes span:nth-child(1){
       margin-left: .2rem;
     }
-    
+
+ /*    .footer-content .span-footer .span{
+      color: whitesmoke;
+    }
+     */
 
 
 
@@ -1253,12 +1267,12 @@ span.error{
 
 .contact-content form input.error-input{
   /* border: solid 1px rgb(197, 37, 11); */
-  background-color: rgba(82, 15, 5, 0.65);
+  background-color: rgba(82, 15, 5, 0.75);
 }
 
 .contact-content form textarea.error-input{
   /* border: solid 1px rgb(197, 37, 11); */
-  background-color: rgba(82, 15, 5, 0.65);
+  background-color: rgba(82, 15, 5, 0.75);
 }
 
 /* FOOTER */
