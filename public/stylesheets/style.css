@@ -427,51 +427,64 @@ html,body{overflow-x:hidden !important}
   height: 100vh;
   margin: 0;
   text-align: center;
-  padding-top: 18vh;
+  padding-top: 15vh;
   margin-top: 0vh;
   margin-bottom: 0vh;
+  background-color: #2a2a2a;
 }
 
 .clients-container .clients-title{
   width: 100%;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
 }
 
 .clients-container .clients-title span{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  padding: 1rem;
+  color: whitesmoke;
 }
 
   .clients-content{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     width: 100%;
   }
 
   .clients-content .logo-client-container{
-    width: 40%;
-    margin: .5rem 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+  }
+
+  .clients-content .img-client-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
 
-  .clients-content .logo-client-container:nth-child(3){
-    margin-top: 2.5rem;
+
+  .clients-content .logo-client-container:nth-child(2) img{
+    width: 190px;
+  }
+  .clients-content .logo-client-container:nth-child(3) img{
+    width: 190px;
+  }
+  .clients-content .logo-client-container:nth-child(4) img{
+    width: 190px;
   }
 
-  .clients-content .logo-client-container:nth-child(4){
-    margin-top: 2.5rem;
-  }
+
 
     .clients-content .logo-client-container img{
-      width: 100%;
-
+      width: 170px;
     }
-
-
 
 /* SECTION #5 */
 
@@ -655,6 +668,128 @@ html,body{overflow-x:hidden !important}
 
 
 /* ----- MEDIA QUERIES ----- */
+@media only screen and ( max-width: 320px ){
+
+ /* SECTION #3 */
+
+ .info-us-container{
+  height: 100vh;
+  min-width: 320px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 0vh;
+  /* margin-bottom: 12vh; */
+  padding: 0 1rem;
+  padding-top: 0vh;
+  margin-top: 0vh;
+}
+
+.back-about-us{
+  width: 100%;
+  background-image: url("/images/about-us.jpg");
+  background-size: cover;
+}
+
+
+.info-us-container .title-about-us{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+.info-us-container .title-about-us span{
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: .5rem;
+  margin-top: 1rem;
+  color: whitesmoke;
+}
+
+.info-us-container .about-us-content {
+  text-align: left;
+  margin-left: 1.3rem;
+}
+.info-us-container .about-us-content span{
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+
+  /* SECTION #4 */
+
+.clients-container{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  padding-top: 10vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  background-color: #2a2a2a;
+}
+
+.clients-container .clients-title{
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+}
+
+.clients-container .clients-title span{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+  .clients-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .clients-content .logo-client-container{
+    width: 100%;
+    margin-bottom: 2rem;
+    
+  }
+
+  .clients-content .img-client-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+
+  .clients-content .logo-client-container:nth-child(2) img{
+    width: 170px;
+  }
+  .clients-content .logo-client-container:nth-child(3) img{
+    width: 170px;
+  }
+  .clients-content .logo-client-container:nth-child(4) img{
+    width: 170px;
+  }
+
+    .clients-content .logo-client-container img{
+      width: 160px;
+    }
+
+
+    /* SECTION #5 */
+
+    .contact-container {
+      padding-top: 22vh;
+    }
+
+
+}
+
 
 
 /* MEDIA QUERY 768px Tablet */
@@ -684,7 +819,7 @@ html,body{overflow-x:hidden !important}
 
 
  /* SECTION #4 */
-
+ 
  .clients-container{
   width: 100%;
   height: 100vh;
@@ -693,6 +828,7 @@ html,body{overflow-x:hidden !important}
   padding-top: 14vh;
   margin-top: 0vh;
   margin-bottom: 0vh;
+  background-color: #2a2a2a;
 }
 
 .clients-container .clients-title{
@@ -700,6 +836,7 @@ html,body{overflow-x:hidden !important}
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  color: whitesmoke;
 }
 
 .clients-container .clients-title span{
@@ -708,23 +845,67 @@ html,body{overflow-x:hidden !important}
   margin-bottom: 1rem;
 }
 
+.clients-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 50vh;
+}
+
   .clients-content .logo-client-container{
-    width: 38%;
+    width: 45%;
     margin: .5rem 1rem;
   }
 
+  .clients-content .img-client-content{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 1rem;
+  }
+
+
+  .clients-content .logo-client-container:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 0 2rem 0;
+
+  }
+
+  .clients-content .logo-client-container:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 0 2rem 0;
+
+  }
 
   .clients-content .logo-client-container:nth-child(3){
-    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
   }
 
   .clients-content .logo-client-container:nth-child(4){
-    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
   }
 
     .clients-content .logo-client-container img{
-      width: 60%;
-    } 
+      padding: .3rem;
+      width: 250px;
+    }
 
 
     /* FOOTER */
@@ -1092,7 +1273,7 @@ html,body{overflow-x:hidden !important}
   width: 100%;
   height: 100vh;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   margin-top: 0vh;
   margin-bottom: 0vh;
   background-color: #2a2a2a;
@@ -1101,8 +1282,8 @@ html,body{overflow-x:hidden !important}
 
 .clients-container .clients-title{
   width: 100%;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  padding-bottom: .5rem;
 }
 
 .clients-container .clients-title span{
@@ -1113,33 +1294,72 @@ html,body{overflow-x:hidden !important}
   color: whitesmoke;
 }
 
-
   .clients-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-
   }
 
-
     .clients-content .logo-client-container{
-      width: 40%;
-      margin: .5rem 1rem;
+      width: 45%;
+      color: whitesmoke;
+    }
+
+    .clients-content .img-client-content{
+      display: flex;
+      justify-content: center;
+      width: 60%;
     }
   
-  
+    .clients-content .logo-client-container:nth-child(1){
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem;
+      margin: 1rem 1rem 2.5rem 1rem;
+
+    }
+
+    .clients-content .logo-client-container:nth-child(2){
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      margin: 1rem 1rem 2.5rem 1rem;
+    }
+
     .clients-content .logo-client-container:nth-child(3){
-      margin-top: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem;
+      margin: 2.5rem 1rem 1rem 1rem;
     }
 
     .clients-content .logo-client-container:nth-child(4){
-      margin-top: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      margin: 2.5rem 1rem 1rem 1rem;
     }
+
+    .clients-content .logo-client-container:nth-child(2) img{
+      width: 290px;
+    }
+    .clients-content .logo-client-container:nth-child(3) img{
+      width: 340px;
+    }
+    .clients-content .logo-client-container:nth-child(4) img{
+      width: 340px;
+    }
+
   
       .clients-content .logo-client-container img{
-        width: 30%;
+        padding: .3rem;
+        width: 260px;
       }
 
 
