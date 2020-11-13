@@ -468,6 +468,9 @@ html,body{overflow-x:hidden !important}
     width: 100%;
   }
 
+  .clients-content .logo-client-container .img-client-content img{
+    padding: .5rem;
+  }
 
 
   .clients-content .logo-client-container:nth-child(2) img{
@@ -764,16 +767,18 @@ html,body{overflow-x:hidden !important}
     width: 100%;
   }
 
-
+  .clients-content .logo-client-container .img-client-content img{
+    padding: .5rem;
+  }
 
   .clients-content .logo-client-container:nth-child(2) img{
-    width: 170px;
+    width: 150px;
   }
   .clients-content .logo-client-container:nth-child(3) img{
-    width: 170px;
+    width: 150px;
   }
   .clients-content .logo-client-container:nth-child(4) img{
-    width: 170px;
+    width: 150px;
   }
 
     .clients-content .logo-client-container img{
@@ -1318,7 +1323,7 @@ html,body{overflow-x:hidden !important}
       align-items: center;
       justify-content: flex-end;
       padding: 1rem;
-      margin: 1rem 1rem 2.5rem 1rem;
+      margin: 0rem 1rem 2.5rem 1rem;
 
     }
 
@@ -1327,7 +1332,7 @@ html,body{overflow-x:hidden !important}
       align-items: center;
       justify-content: flex-start;
       padding: 1rem;
-      margin: 1rem 1rem 2.5rem 1rem;
+      margin: 0rem 1rem 2.5rem 1rem;
     }
 
     .clients-content .logo-client-container:nth-child(3){
@@ -1335,7 +1340,7 @@ html,body{overflow-x:hidden !important}
       align-items: center;
       justify-content: flex-end;
       padding: 1rem;
-      margin: 2.5rem 1rem 1rem 1rem;
+      margin: 1rem 1rem 1rem 1rem;
     }
 
     .clients-content .logo-client-container:nth-child(4){
@@ -1343,7 +1348,7 @@ html,body{overflow-x:hidden !important}
       align-items: center;
       justify-content: flex-start;
       padding: 1rem;
-      margin: 2.5rem 1rem 1rem 1rem;
+      margin: 1rem 1rem 1rem 1rem;
     }
 
     .clients-content .logo-client-container:nth-child(2) img{
